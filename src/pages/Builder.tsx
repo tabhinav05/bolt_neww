@@ -147,12 +147,7 @@ export function Builder() {
   async function init() {
     const response = await axios.post(`${BACKEND_URL}/template`, {
       prompt: prompt.trim()
-    }, {
-      headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer YOUR_API_KEY`
-      }
-  });
+    });
     setTemplateSet(true);
     
     const {prompts, uiPrompts} = response.data;

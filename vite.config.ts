@@ -9,12 +9,6 @@ export default defineConfig({
       'Cross-Origin-Embedder-Policy': 'require-corp',
       'Cross-Origin-Opener-Policy': 'same-origin',
     },
-    proxy: {
-      '/api': {
-        target: 'https://bolt-neww-backend.onrender.com', // Backend URL
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''), // Remove /api prefix
-      },
-    },
+    
   },
 })
