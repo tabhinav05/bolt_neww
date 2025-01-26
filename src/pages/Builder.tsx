@@ -232,6 +232,7 @@ export function Builder() {
           {loading || !templateSet ? (
             <div className="flex items-center justify-center bg-gray-800 p-4 rounded-lg shadow-lg">
               <Loader />
+              <p className="text-gray-300">The first request may take up to 30 seconds. Please wait...</p>
             </div>
           ) : (
             <div className="flex items-start bg-gray-800 p-4 rounded-lg shadow-lg">
