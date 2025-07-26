@@ -21,3 +21,4 @@ export function parseXml(response: string): Step[] {
   });
 
   const actionRegex = /
+}
