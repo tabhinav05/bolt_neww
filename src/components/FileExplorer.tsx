@@ -33,11 +33,7 @@ function FileNode({ item, depth, onFileClick }: FileNodeProps) {
       >
         {item.type === 'folder' && (
           <span className="text-gray-400">
-            {isExpanded ? (
-              <ChevronDown className="w-4 h-4" />
-            ) : (
-              <ChevronRight className="w-4 h-4" />
-            )}
+            {isExpanded ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
           </span>
         )}
         {item.type === 'folder' ? (
