@@ -151,7 +151,7 @@ export function Builder() {
     // Mount the structure if WebContainer is available
     console.log(mountStructure);
     webcontainer?.mount(mountStructure);
-  }, [files, webcontainer]);
+  }, [files]);
 
   async function init() {
     const response = await axios.post(`${BACKEND_URL}/template`, {
